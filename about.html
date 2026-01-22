@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our History - Rhema Fire Christian Church</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/logo.png">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: linear-gradient(to bottom, var(--primary-red), var(--primary-gold));
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            border-top: 4px solid var(--primary-red);
+        }
+        
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-red);
+            border: 4px solid white;
+            border-radius: 50%;
+            top: 20px;
+            right: -10px;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -10px;
+            right: auto;
+        }
+        
+        .timeline-year {
+            position: absolute;
+            top: -15px;
+            background: var(--primary-red);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 3px 10px rgba(178, 34, 34, 0.3);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-year {
+            right: -70px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-year {
+            left: -70px;
+        }
+        
+        .founder-section {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+            padding: 60px 0;
+            margin: 40px 0;
+        }
+        
+        .founder-card {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .founder-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .founder-image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--primary-red), var(--secondary-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 5rem;
+        }
+        
+        .founder-details h2 {
+            color: var(--primary-red);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        .founder-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .highlight-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-gold);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-card i {
+            font-size: 2rem;
+            color: var(--primary-red);
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-content::after {
+                left: 21px;
+                right: auto;
+            }
+            
+            .timeline-year {
+                left: 10px !important;
+                right: auto !important;
+            }
+            
+            .founder-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fire Word Ticker -->
+    <div class="fireword-ticker">
+        <span class="ticker-label">🔥 Today's FIRE WORD:</span>
+        <div class="ticker-content">
+            <span>Psalm 100:4 - "Enter his gates with thanksgiving and his courts with praise..." • Gratitude opens doors to abundance •</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="RFCC Logo" class="logo">
+                <div class="logo-text">
+                    <h1>RHEMA FIRE</h1>
+                    <h2>CHRISTIAN CHURCH</h2>
+                    <p class="tagline">~ the Fire Generation ~</p>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">About <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about.html">Our History</a>
+                            <a href="founder.html">Founder</a>
+                            <a href="leadership.html">Leadership</a>
+                            <a href="beliefs.html">Our Beliefs</a>
+                        </div>
+                    </li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="firepod.html">FirePod</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero-section" style="background: linear-gradient(135deg, var(--primary-red), var(--secondary-red));">
+        <div class="hero-content">
+            <h1>Our Journey of Fire</h1>
+            <p>From humble prayer gatherings to a global fire movement</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="container" style="text-align: center; max-width: 800px; margin: 40px auto;">
+        <h2 class="section-title">The Fire Generation Story</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+            Rhema Fire Christian Church (RFCC), known as <strong>The Fire Generation</strong>, began as a small prayer fellowship in the Eastern Region of Ghana. 
+            What started as informal evening prayers among friends has grown into a vibrant ministry marked by passionate worship, 
+            fervent prayer, and transformative community impact.
+        </p>
+    </section>
+
+    <!-- Historical Timeline -->
+    <section class="timeline-section" style="background: #f8f9fa; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Our Journey Through Time</h2>
+            
+            <div class="timeline">
+                <!-- 2014 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2014</div>
+                    <div class="timeline-content">
+                        <h3>Formal Beginnings</h3>
+                        <p>The prayer fellowship was formally established as <strong>Rhema Prayer Klinik</strong> in Amanokrom, Akuapem. Meetings were held on open school fields and classrooms, marked by intense intercession and spiritual hunger.</p>
+                        <p><strong>Innovation:</strong> Introduced mobile phone conference prayers to overcome weather challenges, laying the foundation for our strong online ministry.</p>
+                    </div>
+                </div>
+
+                <!-- 2015 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Relocation & Expansion</h3>
+                        <p>Founder Robert Ashley Nikoi relocated from Amanokrom to Koforidua. Despite the move, ministry continued through both physical meetings and the growing phone conference prayer system.</p>
+                        <p>The ministry demonstrated remarkable resilience, maintaining fellowship across distances through technological innovation.</p>
+                    </div>
+                </div>
+
+                <!-- 2016 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-content">
+                        <h3>Ministerial Ordination</h3>
+                        <p>Founder Robert Ashley Nikoi was ordained as a prophet, strengthening the ministry's leadership and spiritual foundation.</p>
+                        <p>He also began serving voluntarily as literary and IT assistant at the Mamfe Prayer Camp, contributing to ministerial publications and church branding.</p>
+                    </div>
+                </div>
+
+                <!-- 2017 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-content">
+                        <h3>Rebranding & Growth</h3>
+                        <p>Transitioned to <strong>Rhema Prayer City Incorporated</strong>, operating as a non-denominational prayer and prophetic movement.</p>
+                        <p>Began holding structured prayer meetings at Mountain of Fire and Miracles Church premises in Koforidua and launched extensive evangelistic outreaches across multiple communities.</p>
+                    </div>
+                </div>
+
+                <!-- 2017-2019 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2017-2019</div>
+                    <div class="timeline-content">
+                        <h3>Retreat Ministry</h3>
+                        <p>Organized biannual prayer retreats at Patmos Retreat Center near Larteh Junction:</p>
+                        <ul>
+                            <li><strong>Prayer Trek:</strong> Mid-year retreats (June-August)</li>
+                            <li><strong>Take Back:</strong> December retreats</li>
+                        </ul>
+                        <p>Participants experienced intensive teaching, prayer, deliverance, prophetic direction, and healing over three-day periods.</p>
+                    </div>
+                </div>
+
+                <!-- 2020 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>Major Crusade & Pandemic Adaptation</h3>
+                        <p>Held first major Evangelism and Cross-Over Crusade at Ohemaa Park, Betom-Koforidua on December 30-31.</p>
+                        <p>Successfully transitioned to full online ministry during COVID-19, maintaining weekly services, Bible studies, morning devotions, and deliverance sessions through phone conference calls.</p>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>Strategic Rebranding</h3>
+                        <p>Began transition to <strong>Rhema Fire Christian Church (RFCC)</strong>, clarifying our identity as a church while preserving our prophetic and prayer-centered heritage.</p>
+                        <p><strong>New Vision:</strong> RFCC serves as the church expression, while Rhema Prayer City evolves into a network of retreat centers for prayer, deliverance, and prophetic empowerment.</p>
+                    </div>
+                </div>
+
+                <!-- Present -->
+                <div class="timeline-item">
+                    <div class="timeline-year">Present</div>
+                    <div class="timeline-content">
+                        <h3>Current Ministry & Future Vision</h3>
+                        <p>Continuing strong online presence with consistent prayer meetings, Bible studies, and worship services.</p>
+                        <p>Actively seeking permanent worship facility in Koforidua while maintaining vibrant community outreach and evangelism.</p>
+                        <p>Planning revival of major soul-winning crusades from 2028 onward.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section">
+        <div class="founder-card">
+            <div class="founder-image">
+                <div class="founder-image-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="founder-details">
+                <h2>Founder & Lead Pastor</h2>
+                <h3 style="color: var(--primary-red); margin-bottom: 10px;">Prophet Robert Ashley Nikoi</h3>
+                <p style="font-style: italic; color: var(--text-light); margin-bottom: 20px;">Prophetic Minister, Teacher, Author, Technology Professional</p>
+                
+                <p style="line-height: 1.7; margin-bottom: 20px;">
+                    Pastor Robert Ashley Nikoi is a Ghanaian prophetic minister with a strong mandate in prayer, deliverance, and prophetic empowerment. 
+                    He emerged as the prayer leader during the early gatherings in Amanokrom, where his dedication to intercession and spiritual discipline 
+                    shaped the foundation of what would become The Fire Generation.
+                </p>
+                
+                <div class="founder-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education & Academics</h4>
+                        <p>Graduate of University of Cape Coast. Accomplished author of several academic textbooks for JHS and SHS students.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Technology Expert</h4>
+                        <p>Expert in web technologies, AI systems, software development, Python programming, and application development.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <i class="fas fa-book"></i>
+                        <h4>Published Author</h4>
+                        <p>Author of religious nonfiction books and educational materials that impact both spiritual and academic spheres.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Entrepreneur</h4>
+                        <p>Founder & CEO of Blemafoods GH, a natural food and food-tech enterprise promoting holistic wellness.</p>
+                    </div>
+                </div>
+                
+                <a href="founder.html" class="cta-button" style="display: inline-block; margin-top: 20px; background: var(--primary-red); color: white; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-user-circle"></i> Read Full Biography
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Distinctives -->
+    <section class="container">
+        <h2 class="section-title">What Makes Us Unique</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0;">
+            <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid var(--primary-red);">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <i class="fas fa-fire" style="font-size: 3rem; color: var(--primary-red);"></i>
+                </div>
+                <h3 style="color: var(--primary-red); margin-bottom: 15px;">Prayer-Centered Ministry</h3>
+                <p>Born from prayer gatherings, we maintain prayer as our core DNA. Our innovative phone conference prayer system ensures continuous intercession regardless of location or circumstances.</p>
+            </div>
+            
+            <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid var(--primary-gold);">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <i class="fas fa-bolt" style="font-size: 3rem; color: var(--primary-gold);"></i>
+                </div>
+                <h3 style="color: var(--primary-gold); margin-bottom: 15px;">Prophetic & Deliverance Focus</h3>
+                <p>Grounded in prophetic ministry and deliverance, we equip believers to walk in freedom, hear God's voice clearly, and operate in spiritual authority.</p>
+            </div>
+            
+            <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid var(--primary-red);">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <i class="fas fa-globe" style="font-size: 3rem; color: var(--primary-red);"></i>
+                </div>
+                <h3 style="color: var(--primary-red); margin-bottom: 15px;">Technology-Enhanced Ministry</h3>
+                <p>Leveraging technology for evangelism, online services, and ministry administration. We bridge spiritual passion with technical excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Vision -->
+    <section class="container" style="background: linear-gradient(135deg, var(--primary-dark), #333); color: white; padding: 40px; border-radius: 10px;">
+        <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-gold);">Our Future Vision</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin: 30px 0;">
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <h4 style="color: var(--primary-gold);"><i class="fas fa-church"></i> Permanent Worship Center</h4>
+                <p>Establishing a permanent home for The Fire Generation in Koforidua with modern facilities for worship, training, and community impact.</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <h4 style="color: var(--primary-gold);"><i class="fas fa-network-wired"></i> Prayer City Network</h4>
+                <p>Developing Rhema Prayer City as a network of retreat centers across Ghana and globally for prayer, deliverance, and prophetic empowerment.</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <h4 style="color: var(--primary-gold);"><i class="fas fa-graduation-cap"></i> Training Institute</h4>
+                <p>Launching a ministry training institute for prophetic ministry, deliverance, prayer leadership, and digital ministry.</p>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+                <h4 style="color: var(--primary-gold);"><i class="fas fa-heart"></i> Global Impact</h4>
+                <p>Expanding our soul-winning crusades and community outreach programs to impact nations with the Gospel fire.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RHEMA FIRE CHRISTIAN CHURCH</h3>
+                <p><i class="fas fa-map-marker-alt"></i> FiredSpirit City, Koforidua - Ghana</p>
+                <p><i class="fas fa-phone"></i> Prayer Support: <strong>0249845856</strong></p>
+                <p><i class="fas fa-envelope"></i> Email: <strong>info@rfccg.org</strong></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Heritage</h3>
+                <p>From Rhema Prayer Klinik (2014) to Rhema Prayer City Incorporated (2017) to Rhema Fire Christian Church (2025).</p>
+                <p>Always The Fire Generation.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With The Fire</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com/robert.nikoi" class="social-icon facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon youtube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p style="margin-top: 20px;"><i class="fas fa-pray"></i> Join our prayer line: +233249845856</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rhema Fire Christian Church. All Rights Reserved. | The Fire Generation</p>
+            <p>"I came to send fire on the earth, and how I wish it were already kindled!" - Luke 12:49</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
