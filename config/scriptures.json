@@ -1,0 +1,24 @@
+{
+    "gratitude": [
+        {
+            "reference": "Psalm 100:4",
+            "verse": "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name.",
+            "prayer": "Father, I enter Your presence with a heart full of thanksgiving. Open the gates of glory for me today.",
+            "theme": "vista-blue"
+        },
+        {
+            "reference": "1 Thessalonians 5:18",
+            "verse": "In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
+            "prayer": "Lord, teach me to give thanks in ALL circumstances.",
+            "theme": "vista-light"
+        }
+    ],
+    "warfare": [
+        {
+            "reference": "2 Corinthians 10:4",
+            "verse": "(For the weapons of our warfare are not carnal, but mighty through God to the pulling down of strong holds;)",
+            "prayer": "Mighty God, I take up spiritual weapons today.",
+            "theme": "vista-accent"
+        }
+    ]
+}
