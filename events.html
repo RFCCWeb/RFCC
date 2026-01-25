@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar - RFCC | Vista Theme</title>
+    <link rel="stylesheet" href="styles/vista.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png">
+</head>
+<body class="vista-theme">
+    <!-- Vista Header -->
+    <header class="vista-header glass-panel">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-image">
+                    <img src="assets/images/logo.png" alt="RFCC Logo" class="logo">
+                </div>
+                <div class="logo-text">
+                    <h1 class="vista-title">RHEMA FIRE</h1>
+                    <h2 class="vista-subtitle">CHRISTIAN CHURCH</h2>
+                    <p class="vista-tagline">~ the Fire Generation ~</p>
+                </div>
+            </div>
+            
+            <nav class="vista-nav">
+                <button class="menu-toggle vista-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="vista-nav-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="vista-nav-item"><a href="about.html"><i class="fas fa-church"></i> About</a></li>
+                    <li class="vista-nav-item"><a href="media.html"><i class="fas fa-tv"></i> Media</a></li>
+                    <li class="vista-nav-item active"><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li class="vista-nav-item"><a href="ministries.html"><i class="fas fa-hands-praying"></i> Ministries</a></li>
+                    <li class="vista-nav-item"><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="prayer.html" class="vista-btn"><i class="fas fa-pray"></i> Prayer</a>
+                <a href="donate.html" class="vista-btn fire"><i class="fas fa-donate"></i> Give</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="vista-main">
+        <!-- Vista Calendar Header -->
+        <section class="events-hero vista-glass">
+            <div class="hero-content">
+                <h1><i class="fas fa-calendar-star"></i> Events Calendar</h1>
+                <p>Stay updated with all church programs and activities</p>
+                <div class="live-date vista-clock" id="liveDate"></div>
+            </div>
+        </section>
+
+        <!-- Vista Calendar View -->
+        <section class="calendar-section">
+            <div class="calendar-controls vista-card">
+                <button class="vista-btn" id="prevMonth">
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <h2 id="currentMonth">February 2026</h2>
+                <button class="vista-btn" id="nextMonth">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="vista-calendar vista-card">
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Major Events -->
+        <section class="major-events">
+            <h2 class="section-title"><i class="fas fa-star"></i> Major Events 2026</h2>
+            
+            <div class="events-grid vista-grid">
+                <div class="event-card vista-card">
+                    <div class="event-date" style="background: #0078D7;">
+                        <div class="day">10-15</div>
+                        <div class="month">FEB</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Fruitful Vine 2026</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> FiredSpirit City</p>
+                        <p class="description">Week-long spiritual empowerment ending with Prophetic Vine Feast</p>
+                        <div class="event-actions">
+                            <button class="vista-btn small" onclick="viewEventDetails('fruitfulvine')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <button class="vista-btn small fire" onclick="registerForEvent('fruitfulvine')">
+                                <i class="fas fa-user-plus"></i> Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card vista-card">
+                    <div class="event-date" style="background: #FF8C00;">
+                        <div class="day">29</div>
+                        <div class="month">MAR</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Good Friday Service</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Main Auditorium</p>
+                        <p class="description">Communion service commemorating Christ's sacrifice</p>
+                        <div class="event-actions">
+                            <button class="vista-btn small" onclick="viewEventDetails('goodfriday')">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            <a href="contact.html#directions" class="vista-btn small">
+                                <i class="fas fa-directions"></i> Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regular Schedule -->
+        <section class="regular-schedule vista-card">
+            <h2><i class="fas fa-clock"></i> Regular Service Schedule</h2>
+            <div class="schedule-grid">
+                <div class="schedule-day">
+                    <h3>SUNDAYS</h3>
+                    <ul>
+                        <li><strong>FireWord Service:</strong> 8:00 AM - 10:00 AM</li>
+                        <li><strong>Prophetic Service:</strong> 10:30 AM - 1:30 PM</li>
+                    </ul>
+                </div>
+                <div class="schedule-day">
+                    <h3>WEDNESDAYS</h3>
+                    <ul>
+                        <li><strong>FireWord School:</strong> 6:30 PM - 7:45 PM</li>
+                    </ul>
+                </div>
+                <div class="schedule-day">
+                    <h3>FRIDAYS</h3>
+                    <ul>
+                        <li><strong>FireNight Vigil:</strong> 10:00 PM (1st Friday)</li>
+                        <li><strong>Battle Axe:</strong> 10:00 PM (last Friday)</li>
+                    </ul>
+                </div>
+                <div class="schedule-day">
+                    <h3>DAILY</h3>
+                    <ul>
+                        <li><strong>Rhema Fire Devotion:</strong> 4:30 AM (Online & In-Person)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="vista-footer glass-panel">
+        <div class="footer-content">
+            <p>&copy; 2026 RFCC Events • All are welcome to attend</p>
+            <p>Need more info? Call: <strong>0249845856</strong></p>
+        </div>
+    </footer>
+
+    <!-- Events Script -->
+    <script src="scripts/sounds.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/events-calendar.js"></script>
+    <script>
+        function viewEventDetails(eventId) {
+            alert(`Viewing details for ${eventId}. This would show a detailed modal in the future.`);
+            if (window.vistaSounds) vistaSounds.play('click');
+        }
+        
+        function registerForEvent(eventId) {
+            alert(`Registering for ${eventId}. This would open a registration form in the future.`);
+            if (window.vistaSounds) vistaSounds.play('success');
+        }
+    </script>
+</body>
+</html>
