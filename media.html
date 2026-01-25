@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Center - RFCC | Vista Theme</title>
+    <link rel="stylesheet" href="styles/vista.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="vista-theme">
+    <!-- Same Header -->
+    <header class="vista-header glass-panel">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-image">
+                    <img src="assets/images/logo.png" alt="RFCC Logo" class="logo">
+                </div>
+                <div class="logo-text">
+                    <h1 class="vista-title">RHEMA FIRE</h1>
+                    <h2 class="vista-subtitle">CHRISTIAN CHURCH</h2>
+                    <p class="vista-tagline">~ the Fire Generation ~</p>
+                </div>
+            </div>
+            
+            <nav class="vista-nav">
+                <button class="menu-toggle vista-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="vista-nav-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="vista-nav-item"><a href="about.html"><i class="fas fa-church"></i> About</a></li>
+                    <li class="vista-nav-item active"><a href="media.html"><i class="fas fa-tv"></i> Media</a></li>
+                    <li class="vista-nav-item"><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li class="vista-nav-item"><a href="ministries.html"><i class="fas fa-hands-praying"></i> Ministries</a></li>
+                    <li class="vista-nav-item"><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="prayer.html" class="vista-btn"><i class="fas fa-pray"></i> Prayer</a>
+                <a href="donate.html" class="vista-btn fire"><i class="fas fa-donate"></i> Give</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="vista-main">
+        <section class="media-hero vista-glass">
+            <div class="hero-content">
+                <h1>RFCC Media Center</h1>
+                <p>Watch, Listen, and Download Messages</p>
+            </div>
+        </section>
+
+        <div class="media-tabs">
+            <button class="tab-btn active" data-tab="sermons">Sermons</button>
+            <button class="tab-btn" data-tab="music">Music</button>
+            <button class="tab-btn" data-tab="videos">Videos</button>
+            <button class="tab-btn" data-tab="podcast">FirePod</button>
+        </div>
+
+        <section class="media-content">
+            <div class="tab-content active" id="sermons">
+                <h2><i class="fas fa-bible"></i> Latest Sermons</h2>
+                <div class="media-grid vista-grid">
+                    <div class="media-item vista-card">
+                        <div class="media-thumb" style="background: #0078D7;">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="media-info">
+                            <h3>The Power of a Thankful Heart</h3>
+                            <p class="meta"><i class="far fa-clock"></i> 45 min • 2,345 listens</p>
+                            <button class="vista-btn play-btn" data-audio="thankful-heart.mp3">
+                                <i class="fas fa-play"></i> Play
+                            </button>
+                            <button class="vista-btn">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="media-item vista-card">
+                        <div class="media-thumb" style="background: #FF8C00;">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="media-info">
+                            <h3>Abiding in the True Vine</h3>
+                            <p class="meta"><i class="far fa-clock"></i> 55 min • 1,876 views</p>
+                            <button class="vista-btn play-btn" data-video="true-vine.mp4">
+                                <i class="fas fa-play"></i> Watch
+                            </button>
+                            <button class="vista-btn">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="music">
+                <h2><i class="fas fa-music"></i> Worship Music</h2>
+                <div class="music-player vista-card">
+                    <h3>Fire Generation Worship Album</h3>
+                    <p>12 tracks • Total duration: 60 min</p>
+                    <div class="player-controls">
+                        <button class="vista-btn" id="playAlbum">
+                            <i class="fas fa-play"></i> Play All
+                        </button>
+                        <button class="vista-btn">
+                            <i class="fas fa-download"></i> Download Album
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="vista-footer glass-panel">
+        <div class="footer-content">
+            <p>&copy; 2026 RFCC Media • All messages are free to share</p>
+            <p>Subscribe to our YouTube & FirePod channels</p>
+        </div>
+    </footer>
+
+    <script src="scripts/sounds.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/media-player.js"></script>
+    <script src="scripts/vista-effects.js"></script>
+</body>
+</html>
