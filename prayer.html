@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer - RFCC | Vista Theme</title>
+    <link rel="stylesheet" href="styles/vista.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png">
+</head>
+<body class="vista-theme">
+    <header class="vista-header glass-panel">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-image">
+                    <img src="assets/images/logo.png" alt="RFCC Logo" class="logo">
+                </div>
+                <div class="logo-text">
+                    <h1 class="vista-title">RHEMA FIRE</h1>
+                    <h2 class="vista-subtitle">CHRISTIAN CHURCH</h2>
+                    <p class="vista-tagline">~ the Fire Generation ~</p>
+                </div>
+            </div>
+            
+            <nav class="vista-nav">
+                <button class="menu-toggle vista-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="vista-nav-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="vista-nav-item"><a href="about.html"><i class="fas fa-church"></i> About</a></li>
+                    <li class="vista-nav-item"><a href="media.html"><i class="fas fa-tv"></i> Media</a></li>
+                    <li class="vista-nav-item"><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li class="vista-nav-item"><a href="ministries.html"><i class="fas fa-hands-praying"></i> Ministries</a></li>
+                    <li class="vista-nav-item"><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="prayer.html" class="vista-btn fire active"><i class="fas fa-pray"></i> Prayer</a>
+                <a href="donate.html" class="vista-btn"><i class="fas fa-donate"></i> Give</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="vista-main">
+        <section class="prayer-hero vista-glass">
+            <div class="hero-content">
+                <h1><i class="fas fa-praying-hands"></i> 24/7 Prayer Support</h1>
+                <p>Our prayer warriors are ready to intercede for you</p>
+                <div class="prayer-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+233249845856" class="phone-number">024 984 5856</a>
+                </div>
+                <p class="prayer-tagline">Available 24 hours • 7 days a week</p>
+            </div>
+        </section>
+
+        <!-- Prayer Request Form -->
+        <section class="prayer-form-section vista-card">
+            <h2><i class="fas fa-paper-plane"></i> Submit Prayer Request</h2>
+            <p class="form-intro">Your prayer request will be prayed over by our 24/7 prayer team.</p>
+            
+            <form id="prayerRequestForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Your Name (Optional)</label>
+                        <input type="text" class="vista-input" placeholder="Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Contact (Optional)</label>
+                        <input type="text" class="vista-input" placeholder="Phone or Email">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label>Prayer Request *</label>
+                        <textarea class="vista-input" rows="6" placeholder="Please share your prayer need..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Prayer Category</label>
+                        <select class="vista-input">
+                            <option value="">Select category (optional)</option>
+                            <option value="healing">Healing & Health</option>
+                            <option value="deliverance">Deliverance & Breakthrough</option>
+                            <option value="family">Family & Relationships</option>
+                            <option value="financial">Financial Breakthrough</option>
+                            <option value="guidance">Guidance & Direction</option>
+                            <option value="salvation">Salvation for Loved Ones</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Urgency Level</label>
+                        <div class="urgency-levels">
+                            <label class="urgency-option">
+                                <input type="radio" name="urgency" value="normal" checked>
+                                <span class="urgency-label normal">Normal</span>
+                            </label>
+                            <label class="urgency-option">
+                                <input type="radio" name="urgency" value="urgent">
+                                <span class="urgency-label urgent">Urgent</span>
+                            </label>
+                            <label class="urgency-option">
+                                <input type="radio" name="urgency" value="emergency">
+                                <span class="urgency-label emergency">Emergency</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <div class="privacy-note">
+                            <input type="checkbox" id="privacyCheck" required>
+                            <label for="privacyCheck">
+                                I understand that my prayer request may be shared with our prayer team for intercession.
+                                All information is kept confidential.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="vista-btn fire">
+                    <i class="fas fa-paper-plane"></i> Submit Prayer Request
+                </button>
+            </form>
+        </section>
+
+        <!-- Prayer Resources -->
+        <section class="prayer-resources">
+            <h2 class="section-title"><i class="fas fa-book-bible"></i> Prayer Resources</h2>
+            
+            <div class="resources-grid vista-grid">
+                <div class="resource-card vista-card">
+                    <div class="resource-icon" style="background: #0078D7;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Prayer Times</h3>
+                    <ul>
+                        <li><strong>Daily:</strong> 4:30 AM Devotion</li>
+                        <li><strong>Wednesday:</strong> 6:30 PM Bible Study Prayer</li>
+                        <li><strong>Friday:</strong> Monthly FireNight Vigils</li>
+                        <li><strong>24/7:</strong> Prayer Chain Available</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card vista-card">
+                    <div class="resource-icon" style="background: #4CAF50;">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Prayer Points</h3>
+                    <ul>
+                        <li>Personal breakthrough</li>
+                        <li>Family restoration</li>
+                        <li>Financial miracles</li>
+                        <li>Healing and health</li>
+                        <li>Nation and leaders</li>
+                    </ul>
+                    <button class="vista-btn small" onclick="viewPrayerPoints()">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+                
+                <div class="resource-card vista-card">
+                    <div class="resource-icon" style="background: #FF8C00;">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Join Prayer Warriors</h3>
+                    <p>Become part of our 24/7 prayer chain. Commit to pray for 1 hour per week.</p>
+                    <a href="ministries.html#prayer" class="vista-btn small fire">
+                        <i class="fas fa-user-plus"></i> Join Prayer Team
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonies -->
+        <section class="testimonies-section vista-card">
+            <h2><i class="fas fa-star"></i> Prayer Testimonies</h2>
+            <div class="testimonies-slider">
+                <div class="testimony-card">
+                    <p>"I submitted a prayer request for healing from chronic pain. After two weeks of prayer, the pain completely left! God is faithful."</p>
+                    <p class="testimony-author">- Sister Grace, Koforidua</p>
+                </div>
+                <div class="testimony-card">
+                    <p>"Our marriage was falling apart. The prayer team interceded for us, and today we are restored and stronger than ever."</p>
+                    <p class="testimony-author">- Brother Kwame & Wife</p>
+                </div>
+                <div class="testimony-card">
+                    <p>"After years of unemployment, I received a job offer the same week I submitted my prayer request. Glory to God!"</p>
+                    <p class="testimony-author">- Brother Samuel</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="vista-footer glass-panel">
+        <div class="footer-content">
+            <p>&copy; 2026 RFCC Prayer Ministry • The effectual fervent prayer of the righteous avails much.</p>
+            <p>James 5:16 • Prayer Line: <strong>0249845856</strong></p>
+        </div>
+    </footer>
+
+    <script src="scripts/sounds.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        // Prayer form submission
+        document.getElementById('prayerRequestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const urgency = document.querySelector('input[name="urgency"]:checked').value;
+            let prayerPromise;
+            
+            if (urgency === 'emergency') {
+                prayerPromise = "Our prayer team will begin praying for you immediately.";
+            } else if (urgency === 'urgent') {
+                prayerPromise = "Our prayer team will pray for you within the next hour.";
+            } else {
+                prayerPromise = "Your request has been added to our prayer list and will be prayed over today.";
+            }
+            
+            // Show confirmation
+            const confirmation = document.createElement('div');
+            confirmation.className = 'vista-card prayer-confirmation';
+            confirmation.innerHTML = `
+                <div class="confirmation-header" style="background: ${urgency === 'emergency' ? '#FF4444' : urgency === 'urgent' ? '#FF8C00' : '#4CAF50'};">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Prayer Request Received!</h3>
+                </div>
+                <div class="confirmation-body">
+                    <p>Thank you for sharing your prayer need with us.</p>
+                    <p><strong>${prayerPromise}</strong></p>
+                    <p>For immediate prayer support, call: <strong>0249845856</strong></p>
+                    <p>You will receive a confirmation via WhatsApp/SMS if you provided contact details.</p>
+                    <div class="confirmation-verse">
+                        <i class="fas fa-bible"></i>
+                        "The prayer of faith shall save the sick, and the Lord shall raise him up." - James 5:15
+                    </div>
+                </div>
+            `;
+            
+            this.parentNode.insertBefore(confirmation, this.nextSibling);
+            
+            // Play sound
+            if (window.vistaSounds) vistaSounds.play('success');
+            
+            // Reset form
+            this.reset();
+            
+            // Auto-close after 10 seconds
+            setTimeout(() => {
+                confirmation.style.opacity = '0';
+                confirmation.style.transform = 'translateY(20px)';
+                confirmation.style.transition = 'all 0.5s ease';
+                setTimeout(() => confirmation.remove(), 500);
+            }, 10000);
+        });
+        
+        function viewPrayerPoints() {
+            alert('Prayer points PDF download coming soon! For now, visit our Media page for audio prayer guides.');
+            if (window.vistaSounds) vistaSounds.play('click');
+        }
+    </script>
+</body>
+</html>
