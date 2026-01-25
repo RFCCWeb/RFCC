@@ -1,0 +1,89 @@
+{
+    "upcoming": [
+        {
+            "id": "fruitfulvine2026",
+            "title": "Fruitful Vine 2026",
+            "subtitle": "Prophetic Vine Feast",
+            "date": "2026-02-10",
+            "endDate": "2026-02-15",
+            "time": "18:00",
+            "location": "FiredSpirit City, Koforidua",
+            "description": "Week-long spiritual empowerment ending with Prophetic Vine Feast",
+            "category": "Annual Program",
+            "image": "assets/images/events/fruitful-vine.jpg",
+            "registrationLink": "events.html#fruitfulvine"
+        },
+        {
+            "id": "goodfriday2026",
+            "title": "Good Friday Service",
+            "date": "2026-03-29",
+            "time": "18:00",
+            "location": "Main Auditorium",
+            "description": "Communion service commemorating Christ's sacrifice",
+            "category": "Holy Day",
+            "image": "assets/images/events/good-friday.jpg"
+        },
+        {
+            "id": "jesusbalm2026",
+            "title": "Jesus Balm Medical Outreach",
+            "date": "2026-04-15",
+            "time": "08:00",
+            "location": "Amanokrom Community",
+            "description": "Free medical checkup, medication, and prayer for the community",
+            "category": "Outreach",
+            "image": "assets/images/events/medical-outreach.jpg"
+        }
+    ],
+    "regular": [
+        {
+            "day": "Sunday",
+            "events": [
+                {
+                    "name": "FireWord Service",
+                    "time": "8:00 AM - 10:00 AM",
+                    "description": "Morning worship and teaching"
+                },
+                {
+                    "name": "Prophetic Service",
+                    "time": "10:30 AM - 1:30 PM",
+                    "description": "Prophetic worship and ministry"
+                }
+            ]
+        },
+        {
+            "day": "Wednesday",
+            "events": [
+                {
+                    "name": "FireWord School",
+                    "time": "6:30 PM - 7:45 PM",
+                    "description": "Bible study and discipleship"
+                }
+            ]
+        },
+        {
+            "day": "Friday",
+            "events": [
+                {
+                    "name": "FireNight Vigil (1st Friday)",
+                    "time": "10:00 PM",
+                    "description": "Monthly overnight prayer vigil"
+                },
+                {
+                    "name": "Battle Axe (Last Friday)",
+                    "time": "10:00 PM",
+                    "description": "Spiritual warfare prayer meeting"
+                }
+            ]
+        },
+        {
+            "day": "Daily",
+            "events": [
+                {
+                    "name": "Rhema Fire Devotion",
+                    "time": "4:30 AM",
+                    "description": "Online & In-Person morning devotion"
+                }
+            ]
+        }
+    ]
+}
