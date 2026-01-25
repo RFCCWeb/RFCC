@@ -1,0 +1,298 @@
+/* ===== RFCC MAIN STYLES - VISTA THEME ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #E3F2FD 0%, #F5F9FF 50%, #E8F4FF 100%);
+    color: #333;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Vista Layout */
+.vista-main {
+    padding: 120px 40px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Vista Hero Section */
+.hero-section {
+    margin-bottom: 60px;
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 120, 215, 0.1), rgba(255, 140, 0, 0.05));
+    border: 1px solid rgba(0, 120, 215, 0.2);
+}
+
+.hero-badge {
+    display: inline-block;
+    background: #0078D7;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #0078D7;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;
+}
+
+.hero-subtitle {
+    font-size: 2.5rem;
+    color: #FF8C00;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-text {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-verse {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Services Section */
+.services-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #0078D7;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+.service-card h3 {
+    color: #0078D7;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.service-times {
+    list-style: none;
+    text-align: left;
+}
+
+.service-times li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 120, 215, 0.1);
+    color: #555;
+}
+
+.service-times strong {
+    color: #0078D7;
+}
+
+/* Links Section */
+.links-section {
+    margin-bottom: 60px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.link-card {
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 120, 215, 0.15);
+}
+
+.link-icon {
+    font-size: 3rem;
+    color: #0078D7;
+    margin-bottom: 20px;
+}
+
+.link-card h3 {
+    color: #0078D7;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.link-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Vista Footer */
+.vista-footer {
+    margin-top: 60px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #0078D7;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.4rem;
+}
+
+.footer-section p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Vista Badge */
+.vista-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vista-badge.blue {
+    background: rgba(0, 120, 215, 0.15);
+    color: #0078D7;
+    border: 1px solid rgba(0, 120, 215, 0.3);
+}
+
+.vista-badge.orange {
+    background: rgba(255, 140, 0, 0.15);
+    color: #FF8C00;
+    border: 1px solid rgba(255, 140, 0, 0.3);
+}
+
+/* Vista Clock */
+.vista-clock {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #0078D7;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 120, 215, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vista-main {
+        padding: 100px 20px 40px;
+    }
+    
+    .hero-section {
+        padding: 40px 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .vista-main {
+        padding: 90px 15px 30px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .services-grid,
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}
