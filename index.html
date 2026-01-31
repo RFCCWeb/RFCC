@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RFCC Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/vista.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="container-fluid">
+  <ul>
+    <li><strong>RFCC</strong></li>
+  </ul>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="ministries.html">Ministries</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="contact.html" role="button">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <!-- Hero Section with Vista Glass -->
+  <section class="hero glass">
+    <hgroup>
+      <h1>Welcome to RFCC</h1>
+      <h3>Faith, Community, and Outreach</h3>
+    </hgroup>
+    <p>Connecting communities, fostering growth, and inspiring innovation. Join us in building a brighter future.</p>
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80" alt="Community gathering">
+  </section>
+
+  <!-- Mission Section -->
+  <section class="glass">
+    <hgroup>
+      <h2>Our Mission</h2>
+      <h3>Building a Stronger Community</h3>
+    </hgroup>
+    <p>RFCC exists to connect people through faith, learning, and outreach programs. Our goal is to empower every individual in the community to thrive.</p>
+  </section>
+
+  <!-- Programs Overview -->
+  <section class="glass">
+    <hgroup>
+      <h2>Programs & Ministries</h2>
+      <h3>Serving Every Age & Interest</h3>
+    </hgroup>
+    <p>Explore our diverse ministries, outreach projects, and community events designed to educate, inspire, and connect everyone.</p>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80" alt="Community Programs">
+      <figcaption><a href="https://unsplash.com/photos/q1p7bh3SHj8" target="_blank">Image by Unsplash</a></figcaption>
+    </figure>
+  </section>
+
+</main>
+
+<!-- Subscribe Section -->
+<section aria-label="Subscribe example" class="glass">
+  <div class="container">
+    <article>
+      <hgroup>
+        <h2>Stay Updated</h2>
+        <h3>Subscribe to our newsletter</h3>
+      </hgroup>
+      <form class="grid">
+        <input type="text" id="firstname" name="firstname" placeholder="Your first name" aria-label="First Name" required>
+        <input type="email" id="email" name="email" placeholder="Your email address" aria-label="Email Address" required>
+        <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+      </form>
+    </article>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="container glass">
+  <small>
+    <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+  </small>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/popups.js"></script>
+<script src="scripts/media-player.js"></script>
+<script src="scripts/sounds.js"></script>
+</body>
+</html>
