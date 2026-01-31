@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Sunday Teaching: Faith in Action",
+    "type": "video",
+    "src": "assets/music/gospel1.mp3",
+    "thumbnail": "assets/images/placeholder-video.jpg",
+    "link": "media.html"
+  },
+  {
+    "title": "Youth Retreat Photo Gallery",
+    "type": "image",
+    "src": "assets/images/placeholder-home.jpg",
+    "thumbnail": "assets/images/placeholder-home.jpg",
+    "link": "media.html"
+  },
+  {
+    "title": "Prophetic Worship Night",
+    "type": "video",
+    "src": "assets/music/gospel2.mp3",
+    "thumbnail": "assets/images/placeholder-video.jpg",
+    "link": "media.html"
+  },
+  {
+    "title": "Children’s Ministry Highlights",
+    "type": "image",
+    "src": "assets/images/placeholder-home.jpg",
+    "thumbnail": "assets/images/placeholder-home.jpg",
+    "link": "media.html"
+  },
+  {
+    "title": "Women’s Empowerment Workshop",
+    "type": "image",
+    "src": "assets/images/placeholder-home.jpg",
+    "thumbnail": "assets/images/placeholder-home.jpg",
+    "link": "media.html"
+  },
+  {
+    "title": "Monthly Prayer Altar Highlights",
+    "type": "video",
+    "src": "assets/music/gospel3.mp3",
+    "thumbnail": "assets/images/placeholder-video.jpg",
+    "link": "media.html"
+  }
+]
